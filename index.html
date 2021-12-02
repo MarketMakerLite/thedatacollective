@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>The Data Cooperative</title>
+    <meta name="An open source community dedicated to making market data accessible" content="" />
+    <meta name="data, market, stocks, equities, options, trade, trader" content="" />
+    <meta name="Market Maker Lite" content="" />
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" />
+    <link rel="stylesheet" href="button.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+
+    <!--Replace with your tailwind.css once created-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
+    <style>
+      .gradient {
+      background:#FFFFFF
+      }
+<!--              background-image:#ff99e2;background-image: url("gradient-0.svg");-->
+<!--        background-repeat: no-repeat;-->
+<!--        background-position: center; /* Center the image */-->
+<!--        background-repeat: repeat; /* Do not repeat the image */-->
+    </style>
+  </head>
+  <body class="leading-normal w-full tracking-normal text-white overflow-auto lg:text-left md:text-center sm:text-center" style="font-family: system-ui;">
+  <!--Nav-->
+  <nav id="header" class="fixed w-full z-30 top-0 bg-white text-white py-5 lg:py-2">
+    <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 pt-2">
+      <div class="pl-4 flex items-center">
+        <a class="toggleColour text-gray-600 no-underline hover:no-underline font-bold text-lg lg:text-xl" href="#">
+          The Data Cooperative
+        </a>
+      </div>
+      <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-gray-700 p-4 lg:p-0 z-20" id="nav-content">
+        <ul class="list-reset lg:flex lg:w-auto justify-end flex-1 items-center">
+          <li class="mr-3">
+            <a class="text-gray-700 inline-block py-2 px-4 text-black font-bold no-underline hover:opacity-50" href="#">Join Waitlist</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+
+    <!--Hero-->
+      <div class="ml-128 flex justify-center lg:text-left md:text-center sm:text-center sm:items-center pt-16 lg:pt-2">
+        <div class="flex-1 flex justify-center mr-auto">
+        </div>d
+
+    <div class="lg:pt-0">
+      <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row sm:flex-col sm:justify-center sm:items-center lg:text-left md:text-center sm:text-center">
+        <!--Left Col-->
+        <div class="flex flex-col text-gray-700 w-full md:w-2/5 lg:items-start text-center">
+          <h1 class="my-4 text-7xl font-black leading-tight lg:text-left md:text-center sm:text-center">
+            Join The Data Cooperative
+          </h1>
+          <p class="my-4 text-2xl mb-8 leading-tight text-center">
+            Making market data free since 2023</p>
+          <a class="hidden lg:flex flex flex-col hover:underline text-md font-bold lg:text-left md:text-center sm:text-center" href="https://forms.gle/vN45xqcK1S14iXCG6">
+            Join the Waitlist ></a>
+          <button
+                  id="navAction"
+                  class="lg:hidden mx-auto lg:mx-0 hover:underline bg-gray-700 text-white font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+          >
+            Join the Waitlist
+          </button>
+        </div>
+        <!--Right Col-->
+        <div class="flex md:w-3/5 pt-6 text-right content-flex z-0 hidden lg:flex"><img class="w-full md:w-4/5 z-50" src="spaceman.png"></div>
+      </div>
+    </div>
+      </div>
+
+    <section class="bg-white">
+      <div class="container mx-auto flex flex-wrap pt-8 mt-5 pb-48">
+        <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-600 pb-10">
+          How does it work? <br>
+        </h1>
+        <br> <br> <br>
+        <div class="w-full md:w-1/3 p-6 flex-col flex-grow flex-shrink">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+            <a class="flex mt-3 flex-wrap no-underline hover:no-underline">
+              <div class="w-full font-black text-xl text-gray-600 px-6">
+                Data Sourcing
+              </div>
+              <p class="text-gray-800 text-base px-6 mb-5">
+                <br> We contract with a SIP Data Vendor with redistribution rights.
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+            <a class="flex mt-3 flex-wrap no-underline hover:no-underline">
+              <div class="w-full font-black text-xl text-gray-600 px-6">
+                Data Storage & Distribution
+              </div>
+              <p class="text-gray-800 text-base px-6 mb-5">
+                <br> We use AWS to host a shared database and API to access the database, along with websockets.
+              </p>
+            </a>
+          </div>
+          </div>
+
+        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+            <a class="flex mt-3 flex-wrap no-underline hover:no-underline">
+              <div class="w-full font-black text-xl text-gray-600 px-6">
+                Data Serving
+              </div>
+              <p class="text-gray-800 text-base px-6 mb-5">
+                <br> Real time data is distributed to the members through the hosted API at significantly reduced costs.
+              </p>
+            </a>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-100 mx-auto text-center">
+    <div class="container mx-auto inline-block align-baseline">
+      <div class="w-11/12 xl:w-2/3 lg:w-2/3 md:w-2/3 mx-auto py-12 align-middle">
+        <h1 tabindex="0" class="focus:outline-none xl:text-5xl md:text-3xl text-xl text-center text-gray-400 font-bold">Sponsored by
+          <a href="https://marketmakerlite.com" class="no-underline hover:underline">Market Maker Lite</a></h1>
+        <p tabindex="0" class="focus:outline-none text-base md:text-lg lg:text-xl text-center text-gray-400 font-normal xl:w-10/12 xl:mx-auto"><br>Make the market you deserve</p>
+      </div>
+      </div>
+    </section>
+
+      <div class="bg-white">
+      <a href="https://discord.gg/7PvwEZDFRF" target="_blank">
+        <div class="btn btn-dark floating-btn">
+          <i class="fab fa-discord"></i>
+          <div class="expanded">
+      <span>
+        <i class="far fa-comments"></i>   Reach out on Discord</span>
+          </div>
+        </div>
+      </a>
+      </div>
+
+
+    <!--Footer-->
+    <footer class="bg-white">
+      <div class="container bg-white mx-auto px-8 text-center">
+        <div class="w-full flex flex-col md:flex-row py-6">
+          <div class="flex-1 mb-0 text-black">
+            <a class="text-gray-600 no-underline hover:no-underline">
+              © The Data Cooperative. All Rights Reserved.</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery if you need it
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  -->
+    <script>
+    </script>
+  </body>
+</html>
