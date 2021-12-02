@@ -1,0 +1,54 @@
+.floating-btn {
+  color: white;
+  background: #5865F2;
+  border-color: #5865F2;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 2.6rem;
+  width: 5.2rem;
+  height: 5.2rem;
+  border-radius: 5.2rem 5.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: width 0.5s ease;
+}
+.floating-btn .expanded {
+  opacity: 0;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  transition: width 0.5s ease;
+}
+.floating-btn:hover {
+  width: 26rem;
+    transition: opacity .5s ease;
+
+}
+.floating-btn:hover .icon {
+  opacity: 0;
+    transition: opacity .5s ease;
+
+}
+.floating-btn:hover .expanded {
+  opacity: 1;
+}
+
+.floating-btn .fa-discord {
+  padding-top: 0.4rem;
+}
+.floating-btn:hover .fa-discord {
+  opacity: 0;
+}
